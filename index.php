@@ -1,7 +1,15 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="styles.css?v=<?php echo time(); ?>">
+		<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<title> Weather Scarpper </title>
+	</head>
+	
+	<body>
+
 <?php
 
-	
-	
 	error_reporting(0);
 	
 	//echo $_GET["data"];
@@ -49,7 +57,7 @@
 		
 			
 		}
-		else
+		if(!$weather)
 		{
 			//$error = "Place Not Found\n Check Spelling!"; 				
 			echo "<div id = 'notFound'>Place Not Found<br> Please Check Spelling!</div>";
@@ -59,14 +67,7 @@
 ?>
 
 
-<html>
-	<head>
-		<link rel="stylesheet" href="styles.css?v=<?php echo time(); ?>">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<title> Weather Scarpper </title>
-	</head>
-	
-	<body>
+
 		<div id = "main">
 			<form method = "get">
 				<label for = "country">Country</label><br>
@@ -142,11 +143,10 @@
 		
 		
 		<script>
-			/*$(document).ready(function(){
+			$("#currentLocation").click(function()
+			{
 				if(navigator.geolocation){
 					navigator.geolocation.getCurrentPosition(showLocation);
-				}else{ 
-					$('#location').html('Geolocation is not supported by this browser.');
 				}
 			});
 
@@ -166,7 +166,7 @@
 						}
 					}
 				});
-			}*/
+			}
 			
 			
 			
@@ -235,7 +235,7 @@
 			
 			
 			
-			$("#currentLocation").click(function()
+			/*$("#currentLocation").click(function()
 			{
 				 
 				$.ajax('http://ip-api.com/json')
@@ -255,23 +255,7 @@
 					  
 					 
 					  
-					  /*var data = {					
-						city: response.city,
-						country: response.country
-					  }
-					  console.log(data);
-					  $.get("index.php",data);*/
-					  
 					 
-					 
-					  /*$.ajax({
-					  type: 'GET',
-					  url: 'index.php',
-					  data: { 'city': val1, 'country': val2 },
-					  success: function() {
-					   ;
-				       }
-					  });*/
 			  
 				
 				
@@ -290,7 +274,7 @@
 				
 				
 			
-			});
+			});*/
 				
 			
 			

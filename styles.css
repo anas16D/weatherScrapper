@@ -86,46 +86,59 @@ h1
 	
 	#main
 	{
-		margin: 30% 0 0 25%;
+		margin: 30% 0 0 20%;
+		
 		
 	}
 	
 	form
 	{
-		width: 65%;
+		width: 75%;
+		
 		padding: 15px;
 		
+		
+	}
+	input
+	{
+	    width:80%;
+	}
+	label
+	{
+	    font-size: 20px;
 	}
 	
 	#submit
 	{
-		height: 5%;
-		width: 50%;
+		height: 7.5%;
+		width: 60%;
 		border-radius: 15%;
-		border: groove 4px #16b0f2;;
+		border: groove 4px #16b0f2;
+		font-size: 20px;
 	}
 	
 	#currentLocation
 	{
-		height: 6%;
-		width: 65%;
+		height: 9.5%;
+		width: 75%;
 		border-radius: 10%;
 		border: groove 4px #16f296;
+		font-size: 15px;
 	}
 	
 	#weather
 	{
 	
-		width: 70%;
-		font-size: 20px;
+		width: 80%;
+		font-size: 17px;
 		
 	}
 	
 	#notFound
 	{
 		
-		top: 10%;
-		left:30%;
+		top: 5%;
+		left:25%;
 		
 		
 	}
