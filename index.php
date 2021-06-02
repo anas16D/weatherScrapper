@@ -57,7 +57,7 @@
 		
 			
 		}
-		if(!$weather)
+		else
 		{
 			//$error = "Place Not Found\n Check Spelling!"; 				
 			echo "<div id = 'notFound'>Place Not Found<br> Please Check Spelling!</div>";
